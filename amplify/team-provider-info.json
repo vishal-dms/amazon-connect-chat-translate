@@ -1,0 +1,75 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-connecttranslateblog-dev-7d855-authRole",
+      "UnauthRoleArn": "arn:aws:iam::889365864741:role/amplify-connecttranslateblog-dev-7d855-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::889365864741:role/amplify-connecttranslateblog-dev-7d855-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-connecttranslateblog-dev-7d855-deployment",
+      "UnauthRoleName": "amplify-connecttranslateblog-dev-7d855-unauthRole",
+      "StackName": "amplify-connecttranslateblog-dev-7d855",
+      "StackId": "arn:aws:cloudformation:us-east-1:889365864741:stack/amplify-connecttranslateblog-dev-7d855/9ffa22e0-737a-11f0-ada7-0afff299993f",
+      "AmplifyAppId": "d10yd86xw1v3kh"
+    },
+    "categories": {
+      "auth": {
+        "connecttranslateblog690eb6d1": {}
+      },
+      "function": {
+        "amazonTranslateLambda": {},
+        "postInstallScript": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d10yd86xw1v3kh",
+          "type": "manual"
+        }
+      }
+    }
+  },
+  "max": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-connecttranslateblog-max-fcecb-authRole",
+      "UnauthRoleArn": "arn:aws:iam::889365864741:role/amplify-connecttranslateblog-max-fcecb-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::889365864741:role/amplify-connecttranslateblog-max-fcecb-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-connecttranslateblog-max-fcecb-deployment",
+      "UnauthRoleName": "amplify-connecttranslateblog-max-fcecb-unauthRole",
+      "StackName": "amplify-connecttranslateblog-max-fcecb",
+      "StackId": "arn:aws:cloudformation:us-east-1:889365864741:stack/amplify-connecttranslateblog-max-fcecb/376a2ed0-737c-11f0-b19e-0affc4c0b03b",
+      "AmplifyAppId": "d10yd86xw1v3kh",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-connecttranslateblog-max-fcecb-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+    },
+    "categories": {
+      "auth": {
+        "connecttranslateblog690eb6d1": {}
+      },
+      "function": {
+        "amazonTranslateLambda": {
+          "deploymentBucketName": "amplify-connecttranslateblog-max-fcecb-deployment",
+          "s3Key": "amplify-builds/amazonTranslateLambda-62566870334a6e384c66-build.zip"
+        },
+        "postInstallScript": {
+          "deploymentBucketName": "amplify-connecttranslateblog-max-fcecb-deployment",
+          "s3Key": "amplify-builds/postInstallScript-5a792f6f6c4a4f52596b-build.zip"
+        }
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d10yd86xw1v3kh",
+          "type": "manual"
+        }
+      },
+      "api": {
+        "amazonTranslateAPI": {}
+      },
+      "custom": {
+        "environmentIntegration": {}
+      },
+      "predictions": {
+        "interpretTextcabd9d8d": {},
+        "translateText0519c50f": {}
+      }
+    }
+  }
+}

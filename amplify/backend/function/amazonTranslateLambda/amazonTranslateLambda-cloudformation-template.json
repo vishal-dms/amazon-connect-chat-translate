@@ -1,6 +1,6 @@
 {
   "AWSTemplateFormatVersion": "2010-09-09",
-  "Description": "{\"createdOn\":\"Mac\",\"createdBy\":\"Amplify\",\"createdWith\":\"12.4.0\",\"stackType\":\"function-Lambda\",\"metadata\":{}}",
+  "Description": "{\"createdOn\":\"Mac\",\"createdBy\":\"Amplify\",\"createdWith\":\"14.0.0\",\"stackType\":\"function-Lambda\",\"metadata\":{\"whyContinueWithGen1\":\"\"}}",
   "Parameters": {
     "CloudWatchRule": {
       "Type": "String",
@@ -164,9 +164,16 @@
             {
               "Effect": "Allow",
               "Action": [
-                "translate:TranslateText"
+                "bedrock:InvokeModel"
               ],
-              "Resource": "*"
+              "Resource": [
+                "arn:aws:bedrock:us-east-1:*:inference-profile/us.anthropic.claude-3-5-sonnet-20241022-v2:0",
+                "arn:aws:bedrock:us-east-1:*:inference-profile/us.anthropic.claude-3-sonnet-20240229-v1:0",
+                "arn:aws:bedrock:us-east-1:*:inference-profile/us.anthropic.claude-3-haiku-20240307-v1:0",
+                "arn:aws:bedrock:us-west-2:*:inference-profile/us.anthropic.claude-3-5-sonnet-20241022-v2:0",
+                "arn:aws:bedrock:us-west-2:*:inference-profile/us.anthropic.claude-3-sonnet-20240229-v1:0",
+                "arn:aws:bedrock:us-west-2:*:inference-profile/us.anthropic.claude-3-haiku-20240307-v1:0"
+              ]
             }
           ]
         }

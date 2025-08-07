@@ -189,13 +189,15 @@ const Ccp = () => {
     // Loading CCP
     // *****
     useEffect(() => {
-        const connectUrl = process.env.REACT_APP_CONNECT_INSTANCE_URL;
+        // const connectUrl = process.env.REACT_APP_CONNECT_INSTANCE_URL;
+        const connectUrl = "https://vishnaya.my.connect.aws"
         window.connect.agentApp.initApp(
             "ccp",
             "ccp-container",
             connectUrl + "/connect/ccp-v2/", { 
                 ccpParams: { 
-                    region: process.env.REACT_APP_CONNECT_REGION,
+                    // region: process.env.REACT_APP_CONNECT_REGION,
+                    region: "us-east-1",
                     pageOptions: {                  // optional
                         enableAudioDeviceSettings: true, // optional, defaults to 'false'
                         enablePhoneTypeSettings: true // optional, defaults to 'true'
